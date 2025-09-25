@@ -71,7 +71,6 @@
 }
 
 @theme inline {
-
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -110,6 +109,15 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+@font-face {
+  font-family: "Zooja";
+  src: url("/fonts/Zooja-Pro/Zooja-Pro.woff2") format("woff2"),
+    url("/fonts/Zooja-Pro/Zooja-Pro.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -121,12 +129,24 @@
 
 /* Added custom patterns inspired by African and Caribbean textiles */
 .wax-pattern {
-  background-image: radial-gradient(circle at 25% 25%, oklch(0.65 0.2 60 / 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 75% 75%, oklch(0.55 0.18 35 / 0.1) 0%, transparent 50%);
+  background-image: radial-gradient(
+      circle at 25% 25%,
+      oklch(0.65 0.2 60 / 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 75% 75%,
+      oklch(0.55 0.18 35 / 0.1) 0%,
+      transparent 50%
+    );
 }
 
 .madras-pattern {
-  background-image: linear-gradient(45deg, oklch(0.45 0.15 120 / 0.05) 25%, transparent 25%),
+  background-image: linear-gradient(
+      45deg,
+      oklch(0.45 0.15 120 / 0.05) 25%,
+      transparent 25%
+    ),
     linear-gradient(-45deg, oklch(0.65 0.2 60 / 0.05) 25%, transparent 25%);
   background-size: 20px 20px;
 }

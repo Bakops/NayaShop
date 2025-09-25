@@ -1,6 +1,14 @@
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Facebook, Instagram, Twitter, Youtube, Mail, Phone, MapPin } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import {
+  Facebook,
+  Instagram,
+  Mail,
+  MapPin,
+  Phone,
+  Twitter,
+  Youtube,
+} from "lucide-react";
 
 export function Footer() {
   return (
@@ -10,13 +18,11 @@ export function Footer() {
           {/* Brand & Newsletter */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="h-8 w-8 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">K</span>
-              </div>
-              <span className="text-xl font-bold text-primary">Karibean Market</span>
+              <img src="Orizana.svg" alt="" className="w-[101.04px] h-[44px]" />
             </div>
             <p className="text-sm text-muted-foreground">
-              La marketplace de référence pour les produits afro-caribéens authentiques.
+              La marketplace de référence pour les produits afro-caribéens
+              authentiques.
             </p>
             <div className="space-y-2">
               <h4 className="font-semibold text-sm">Newsletter</h4>
@@ -32,27 +38,42 @@ export function Footer() {
             <h4 className="font-semibold">Liens rapides</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Accueil
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Catégories
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Vendeurs
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Nouveautés
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Promotions
                 </a>
               </li>
@@ -64,27 +85,42 @@ export function Footer() {
             <h4 className="font-semibold">Support</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Centre d'aide
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Comment vendre
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Politique de retour
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Livraison
                 </a>
               </li>
               <li>
-                <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="#"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Contact
                 </a>
               </li>
@@ -109,16 +145,32 @@ export function Footer() {
               </div>
             </div>
             <div className="flex space-x-2">
-              <Button variant="outline" size="sm" className="p-2 bg-transparent">
+              <Button
+                variant="outline"
+                size="sm"
+                className="p-2 bg-transparent"
+              >
                 <Facebook className="h-4 w-4" />
               </Button>
-              <Button variant="outline" size="sm" className="p-2 bg-transparent">
+              <Button
+                variant="outline"
+                size="sm"
+                className="p-2 bg-transparent"
+              >
                 <Instagram className="h-4 w-4" />
               </Button>
-              <Button variant="outline" size="sm" className="p-2 bg-transparent">
+              <Button
+                variant="outline"
+                size="sm"
+                className="p-2 bg-transparent"
+              >
                 <Twitter className="h-4 w-4" />
               </Button>
-              <Button variant="outline" size="sm" className="p-2 bg-transparent">
+              <Button
+                variant="outline"
+                size="sm"
+                className="p-2 bg-transparent"
+              >
                 <Youtube className="h-4 w-4" />
               </Button>
             </div>
@@ -126,20 +178,31 @@ export function Footer() {
         </div>
 
         <div className="border-t mt-8 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <p className="text-sm text-muted-foreground">© 2025 Karibean Market. Tous droits réservés.</p>
+          <p className="text-sm text-muted-foreground">
+            © 2025 Karibean Market. Tous droits réservés.
+          </p>
           <div className="flex space-x-6 text-sm">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+            <a
+              href="#"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
               Conditions d'utilisation
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+            <a
+              href="#"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
               Confidentialité
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+            <a
+              href="#"
+              className="text-muted-foreground hover:text-primary transition-colors"
+            >
               Cookies
             </a>
           </div>
         </div>
       </div>
     </footer>
-  )
+  );
 }
