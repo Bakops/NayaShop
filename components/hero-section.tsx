@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Sparkles } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Sparkles } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -9,17 +9,19 @@ export function HeroSection() {
           <div className="space-y-6">
             <div className="inline-flex items-center space-x-2 bg-accent/20 rounded-full px-4 py-2">
               <Sparkles className="h-4 w-4 text-accent" />
-              <span className="text-sm font-medium text-accent-foreground">Nouveau : Livraison gratuite dès 50€</span>
+              <span className="text-sm font-medium text-accent-foreground">
+                Nouveau : Livraison gratuite dès 50€
+              </span>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-bold text-balance leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold font-Zooja text-balance leading-tight">
               Découvrez l'authenticité
               <span className="text-primary block">Afro-Caribéenne</span>
             </h1>
 
             <p className="text-lg text-muted-foreground text-pretty max-w-md">
-              Mode, beauté, artisanat et produits culturels authentiques. Vendez et achetez en toute confiance sur notre
-              marketplace dédiée.
+              Mode, beauté, artisanat et produits culturels authentiques. Vendez
+              et achetez en toute confiance sur notre marketplace dédiée.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -62,8 +64,12 @@ export function HeroSection() {
                   <span className="text-primary font-semibold">4.9</span>
                 </div>
                 <div>
-                  <div className="font-semibold text-sm">Excellente qualité</div>
-                  <div className="text-xs text-muted-foreground">+2000 avis</div>
+                  <div className="font-semibold text-sm">
+                    Excellente qualité
+                  </div>
+                  <div className="text-xs text-muted-foreground">
+                    +2000 avis
+                  </div>
                 </div>
               </div>
             </div>
@@ -71,5 +77,5 @@ export function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -12,7 +12,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
-      <div className="border-b">
+      <div className="border-1 border-b border-gray-200">
         <div className="container mx-auto px-4">
           <div className="flex h-[52px] items-center w-[651px] md:w-full justify-center">
             <Link href="/" className="flex items-center space-x-2 ">
@@ -38,7 +38,7 @@ export function Header() {
                   href="/seller/dashboard"
                   className="flex items-center space-x-1"
                 >
-                  <span> S'inscrire | Se connecter</span>
+                  <span className="font-inter"> S'inscrire | Se connecter</span>
                 </Link>
               </Button>
               <Button
