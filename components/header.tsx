@@ -22,7 +22,6 @@ import { DropdownMenuHeader } from "./ui/dropdown-menu-header";
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Prevent body scroll when menu is open
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = "hidden";
@@ -42,7 +41,7 @@ export function Header() {
       <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
         <div className="border-[0.5px] border-b border-gray-200">
           <div className="container mx-auto px-4">
-            <div className="flex h-[52px] items-center justify-between">
+            <div className="flex h-[52px] items-center justify-center gap-20 md:justify-center md:gap-0">
               <div className="flex items-center md:hidden">
                 <Button
                   variant="ghost"
@@ -54,7 +53,7 @@ export function Header() {
                 </Button>
               </div>
 
-              <div className="flex-1 flex justify-center md:justify-start">
+              <div className=" flex items-center">
                 <Link href="/" className="flex items-center space-x-2">
                   <img
                     src="Orizana.svg"
@@ -197,7 +196,6 @@ export function Header() {
         } shadow-2xl`}
       >
         <div className="flex flex-col h-full">
-          {/* Menu Header */}
           <div className="flex items-center justify-between p-4 border-b border-gray-200">
             <img src="Orizana.svg" alt="" className="w-[80px] h-[38px]" />
             <Button
@@ -210,10 +208,8 @@ export function Header() {
             </Button>
           </div>
 
-          {/* Menu Content */}
           <div className="flex-1 overflow-y-auto">
             <div className="p-4 space-y-6">
-              {/* Auth Buttons */}
               <div className="space-y-3">
                 <Button
                   className="w-full bg-[#4E342E] text-white hover:bg-[#3D2B23] rounded-[6px] h-12"
@@ -244,7 +240,6 @@ export function Header() {
                 </Button>
               </div>
 
-              {/* Main Navigation */}
               <div className="space-y-1">
                 <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider px-3 py-2">
                   Navigation
@@ -273,7 +268,6 @@ export function Header() {
                 </Link>
               </div>
 
-              {/* Categories */}
               <div className="space-y-1">
                 <div className="text-xs font-semibold text-gray-400 uppercase tracking-wider px-3 py-2">
                   Catégories

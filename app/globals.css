@@ -12,25 +12,11 @@
   font-display: swap;
 }
 
-.wax-pattern {
-  background-image: radial-gradient(
-      circle at 25% 25%,
-      oklch(0.65 0.2 60 / 0.1) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 75% 75%,
-      oklch(0.55 0.18 35 / 0.1) 0%,
-      transparent 50%
-    );
+html::-webkit-scrollbar {
+  width: 11px;
+  display: none;
 }
 
-.madras-pattern {
-  background-image: linear-gradient(
-      45deg,
-      oklch(0.45 0.15 120 / 0.05) 25%,
-      transparent 25%
-    ),
-    linear-gradient(-45deg, oklch(0.65 0.2 60 / 0.05) 25%, transparent 25%);
-  background-size: 20px 20px;
+html::-webkit-scrollbar-track {
+  background-color: transparent;
 }
